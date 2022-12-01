@@ -1,9 +1,5 @@
 import gameProcess from '../index.js';
-
-const randomIntFromInterval = (min, max) => {
-    // min and max included 
-      return Math.floor(Math.random() * (max - min + 1) + min)
-    };
+import randomIntFromInterval from '../random.js';
 
 const gameInvitation = 'What is the result of the expression?';
 

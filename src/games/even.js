@@ -1,12 +1,7 @@
 import gameProcess from '../index.js';
+import randomIntFromInterval from '../random.js';
 
 const gameInvitation = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-const randomIntFromInterval = (min, max) => {
-// min and max included 
-  return Math.floor(Math.random() * (max - min + 1) + min)
-};
-
 const isEven = (num) => num % 2 === 0;
 
 const gamedataArray = () => {
