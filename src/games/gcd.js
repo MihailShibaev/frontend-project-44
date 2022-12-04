@@ -4,14 +4,14 @@ import randomIntFromInterval from '../random.js';
 const gameInvitation = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (firstOperand, secondOperand) => {
-  let maxDivisor =1; //current greatest common divisor for anything arguments
-  const minOperand = firstOperand <= secondOperand ? firstOperand : secondOperand; //какой из операндов меньше ?
-for (let i=1; i <= minOperand; i+=1){
-    if (firstOperand%i === 0 && secondOperand%i === 0) {
-        maxDivisor = i;
+  let maxDivisor = 1; // current greatest common divisor for anything arguments
+  const minOperand = firstOperand <= secondOperand ? firstOperand : secondOperand;
+  for (let i = 1; i <= minOperand; i += 1) {
+    if (firstOperand % i === 0 && secondOperand % i === 0) {
+      maxDivisor = i;
     }
-}
-return maxDivisor;
+  }
+  return maxDivisor;
 };
 
 const gamedataArray = () => {
